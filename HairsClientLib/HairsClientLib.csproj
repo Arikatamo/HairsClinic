@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9243BE69-7D4D-4501-B149-3A9F9692656C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HairsClientLib</RootNamespace>
+    <AssemblyName>HairsClientLib</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsyncConnection.cs" />
+    <Compile Include="Concrete\AccesRights.cs" />
+    <Compile Include="EFContext.cs" />
+    <Compile Include="Interfaces\iAccesRight.cs" />
+    <Compile Include="Lib\AccesRight.cs" />
+    <Compile Include="Lib\CommentaryToVisit.cs" />
+    <Compile Include="Lib\CommentaryType.cs" />
+    <Compile Include="Lib\ConfigHair.cs" />
+    <Compile Include="Lib\ConfigHairSize.cs" />
+    <Compile Include="Lib\ConfigStaticNormales.cs" />
+    <Compile Include="Lib\ContactS.cs" />
+    <Compile Include="Lib\Diagnoses.cs" />
+    <Compile Include="Lib\FieldType.cs" />
+    <Compile Include="Lib\FieldVariants.cs" />
+    <Compile Include="Lib\GenderS.cs" />
+    <Compile Include="Lib\Hair.cs" />
+    <Compile Include="Lib\ImageLogo.cs" />
+    <Compile Include="Lib\Objectives.cs" />
+    <Compile Include="Lib\Patient.cs" />
+    <Compile Include="Lib\PatientStatuS.cs" />
+    <Compile Include="Lib\Photoses.cs" />
+    <Compile Include="Lib\Reportfield.cs" />
+    <Compile Include="Lib\ReportTemplate.cs" />
+    <Compile Include="Lib\Research.cs" />
+    <Compile Include="Lib\ResearchStatus.cs" />
+    <Compile Include="Lib\ResearchType.cs" />
+    <Compile Include="Lib\StatusesForPatient.cs" />
+    <Compile Include="Lib\User.cs" />
+    <Compile Include="Lib\Visit.cs" />
+    <Compile Include="Migrations\201804190608520_tblGender and tblContacts.cs" />
+    <Compile Include="Migrations\201804190608520_tblGender and tblContacts.Designer.cs">
+      <DependentUpon>201804190608520_tblGender and tblContacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804190614359_tblContacts update.cs" />
+    <Compile Include="Migrations\201804190614359_tblContacts update.Designer.cs">
+      <DependentUpon>201804190614359_tblContacts update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804190619192_tblStatusesForPatient and tblPatientStatuses update.cs" />
+    <Compile Include="Migrations\201804190619192_tblStatusesForPatient and tblPatientStatuses update.Designer.cs">
+      <DependentUpon>201804190619192_tblStatusesForPatient and tblPatientStatuses update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804190649436_tblCommentaryType and tblCommentaryToVisit update.cs" />
+    <Compile Include="Migrations\201804190649436_tblCommentaryType and tblCommentaryToVisit update.Designer.cs">
+      <DependentUpon>201804190649436_tblCommentaryType and tblCommentaryToVisit update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804190714144_tblResearchStatus, tblDiagnoses, tblObjectives, tblConfigHairSize  insert.cs" />
+    <Compile Include="Migrations\201804190714144_tblResearchStatus, tblDiagnoses, tblObjectives, tblConfigHairSize  insert.Designer.cs">
+      <DependentUpon>201804190714144_tblResearchStatus, tblDiagnoses, tblObjectives, tblConfigHairSize  insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804190722140_tblConfigHairSize, tblConfigStaticNormales, tblConfigHair,  insert.cs" />
+    <Compile Include="Migrations\201804190722140_tblConfigHairSize, tblConfigStaticNormales, tblConfigHair,  insert.Designer.cs">
+      <DependentUpon>201804190722140_tblConfigHairSize, tblConfigStaticNormales, tblConfigHair,  insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804190726262_tblPhoto insert.cs" />
+    <Compile Include="Migrations\201804190726262_tblPhoto insert.Designer.cs">
+      <DependentUpon>201804190726262_tblPhoto insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804190729196_tblHair insert.cs" />
+    <Compile Include="Migrations\201804190729196_tblHair insert.Designer.cs">
+      <DependentUpon>201804190729196_tblHair insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804190755102_tblFieldVariants, tblImageLogo, tblFieldType, tblReportfield insert.cs" />
+    <Compile Include="Migrations\201804190755102_tblFieldVariants, tblImageLogo, tblFieldType, tblReportfield insert.Designer.cs">
+      <DependentUpon>201804190755102_tblFieldVariants, tblImageLogo, tblFieldType, tblReportfield insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804190756537_tblReportfield insert.cs" />
+    <Compile Include="Migrations\201804190756537_tblReportfield insert.Designer.cs">
+      <DependentUpon>201804190756537_tblReportfield insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804190804456_ReportTemplate insert.cs" />
+    <Compile Include="Migrations\201804190804456_ReportTemplate insert.Designer.cs">
+      <DependentUpon>201804190804456_ReportTemplate insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804190808161_tblReportTemplate update.cs" />
+    <Compile Include="Migrations\201804190808161_tblReportTemplate update.Designer.cs">
+      <DependentUpon>201804190808161_tblReportTemplate update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804191046571_tbltblPatient insert.cs" />
+    <Compile Include="Migrations\201804191046571_tbltblPatient insert.Designer.cs">
+      <DependentUpon>201804191046571_tbltblPatient insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804191101217_tblResearch insert.cs" />
+    <Compile Include="Migrations\201804191101217_tblResearch insert.Designer.cs">
+      <DependentUpon>201804191101217_tblResearch insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804191120446_tblUser, tblAcces insert.cs" />
+    <Compile Include="Migrations\201804191120446_tblUser, tblAcces insert.Designer.cs">
+      <DependentUpon>201804191120446_tblUser, tblAcces insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804191202212_tblVisit insert.cs" />
+    <Compile Include="Migrations\201804191202212_tblVisit insert.Designer.cs">
+      <DependentUpon>201804191202212_tblVisit insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201804190608520_tblGender and tblContacts.resx">
+      <DependentUpon>201804190608520_tblGender and tblContacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804190614359_tblContacts update.resx">
+      <DependentUpon>201804190614359_tblContacts update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804190619192_tblStatusesForPatient and tblPatientStatuses update.resx">
+      <DependentUpon>201804190619192_tblStatusesForPatient and tblPatientStatuses update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804190649436_tblCommentaryType and tblCommentaryToVisit update.resx">
+      <DependentUpon>201804190649436_tblCommentaryType and tblCommentaryToVisit update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804190714144_tblResearchStatus, tblDiagnoses, tblObjectives, tblConfigHairSize  insert.resx">
+      <DependentUpon>201804190714144_tblResearchStatus, tblDiagnoses, tblObjectives, tblConfigHairSize  insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804190722140_tblConfigHairSize, tblConfigStaticNormales, tblConfigHair,  insert.resx">
+      <DependentUpon>201804190722140_tblConfigHairSize, tblConfigStaticNormales, tblConfigHair,  insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804190726262_tblPhoto insert.resx">
+      <DependentUpon>201804190726262_tblPhoto insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804190729196_tblHair insert.resx">
+      <DependentUpon>201804190729196_tblHair insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804190755102_tblFieldVariants, tblImageLogo, tblFieldType, tblReportfield insert.resx">
+      <DependentUpon>201804190755102_tblFieldVariants, tblImageLogo, tblFieldType, tblReportfield insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804190756537_tblReportfield insert.resx">
+      <DependentUpon>201804190756537_tblReportfield insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804190804456_ReportTemplate insert.resx">
+      <DependentUpon>201804190804456_ReportTemplate insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804190808161_tblReportTemplate update.resx">
+      <DependentUpon>201804190808161_tblReportTemplate update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804191046571_tbltblPatient insert.resx">
+      <DependentUpon>201804191046571_tbltblPatient insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804191101217_tblResearch insert.resx">
+      <DependentUpon>201804191101217_tblResearch insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804191120446_tblUser, tblAcces insert.resx">
+      <DependentUpon>201804191120446_tblUser, tblAcces insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804191202212_tblVisit insert.resx">
+      <DependentUpon>201804191202212_tblVisit insert.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
