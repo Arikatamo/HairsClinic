@@ -7,14 +7,11 @@ using System.Threading.Tasks;
 
 namespace HairsClientLib.Interfaces
 {
-    /// <summary>
-    /// Права доступа
-    /// </summary>
-    public interface iAccesRight
+  public  interface iConfigSize
     {
-        AccesRight Add(AccesRight item);
-        IList<AccesRight> GetAll();
-        void Remove(AccesRight item);
+        ConfigHairSize Add(ConfigHairSize item);
+        IList<ConfigHairSize> GetAll();
+        void Remove(ConfigHairSize item);
         void SaveChanges();
         void Dispose();
     }

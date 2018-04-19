@@ -15,6 +15,9 @@ namespace HairsClientLib.Lib
         public int Id { get; set; }
         [Required, StringLength(maximumLength:100)]
         public string Status { get; set; }
+        [ForeignKey("Patients")]
+        public int PatiendId { get; set; }
+        public IList<Patient> Patients { get; set; }
 
     }
 }

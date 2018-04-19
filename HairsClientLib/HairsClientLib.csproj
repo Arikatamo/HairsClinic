@@ -49,9 +49,51 @@
   <ItemGroup>
     <Compile Include="AsyncConnection.cs" />
     <Compile Include="Controller\AccesRightsController.cs" />
+    <Compile Include="Controller\CommentToVisControl.cs" />
+    <Compile Include="Controller\CommentTypeControl.cs" />
+    <Compile Include="Controller\ConfigControl.cs" />
+    <Compile Include="Controller\ConfigSizeHaiControl.cs" />
+    <Compile Include="Controller\ConfigStaticNormControl.cs" />
+    <Compile Include="Controller\ContactsController.cs" />
+    <Compile Include="Controller\DiagnosControl.cs" />
+    <Compile Include="Controller\FieldTypeControl.cs" />
+    <Compile Include="Controller\FieldVariantControl.cs" />
+    <Compile Include="Controller\HairControl.cs" />
+    <Compile Include="Controller\ImageControl.cs" />
+    <Compile Include="Controller\ObjectivControl.cs" />
+    <Compile Include="Controller\PatientController.cs" />
+    <Compile Include="Controller\PhotoControl.cs" />
+    <Compile Include="Controller\ReportFieldControl.cs" />
+    <Compile Include="Controller\ResearchControl.cs" />
+    <Compile Include="Controller\ResearchStatusControl.cs" />
+    <Compile Include="Controller\ReportTemplControl.cs" />
+    <Compile Include="Controller\StatusPatientController.cs" />
+    <Compile Include="Controller\UserController.cs" />
+    <Compile Include="Controller\VisitControl.cs" />
     <Compile Include="EFContext.cs" />
     <Compile Include="Interfaces\iAccesRight.cs" />
+    <Compile Include="Interfaces\iComentaryToVisit.cs" />
+    <Compile Include="Interfaces\iComentaryType.cs" />
+    <Compile Include="Interfaces\iConfigs.cs" />
+    <Compile Include="Interfaces\iConfigSize.cs" />
+    <Compile Include="Interfaces\iConfigStaticNorm.cs" />
+    <Compile Include="Interfaces\iContacts.cs" />
+    <Compile Include="Interfaces\iDiagnos.cs" />
+    <Compile Include="Interfaces\iFieldType.cs" />
+    <Compile Include="Interfaces\iFieldVariant.cs" />
+    <Compile Include="Interfaces\iGender.cs" />
+    <Compile Include="Interfaces\iHair.cs" />
+    <Compile Include="Interfaces\iImageLogo.cs" />
+    <Compile Include="Interfaces\iObjectives.cs" />
+    <Compile Include="Interfaces\iPatient.cs" />
     <Compile Include="Interfaces\iPatientStatus.cs" />
+    <Compile Include="Interfaces\iPhoto.cs" />
+    <Compile Include="Interfaces\iReportField.cs" />
+    <Compile Include="Interfaces\iReportTemplate.cs" />
+    <Compile Include="Interfaces\iResearch.cs" />
+    <Compile Include="Interfaces\iResearchStatus.cs" />
+    <Compile Include="Interfaces\iUser.cs" />
+    <Compile Include="Interfaces\iVisit.cs" />
     <Compile Include="Lib\AccesRight.cs" />
     <Compile Include="Lib\CommentaryToVisit.cs" />
     <Compile Include="Lib\CommentaryType.cs" />
@@ -141,6 +183,18 @@
     <Compile Include="Migrations\201804191202212_tblVisit insert.Designer.cs">
       <DependentUpon>201804191202212_tblVisit insert.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804191504398_update PatientStatuses.cs" />
+    <Compile Include="Migrations\201804191504398_update PatientStatuses.Designer.cs">
+      <DependentUpon>201804191504398_update PatientStatuses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804191506165_update PatientStatuses2.cs" />
+    <Compile Include="Migrations\201804191506165_update PatientStatuses2.Designer.cs">
+      <DependentUpon>201804191506165_update PatientStatuses2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804191509430_delete tblPatientStatuses.cs" />
+    <Compile Include="Migrations\201804191509430_delete tblPatientStatuses.Designer.cs">
+      <DependentUpon>201804191509430_delete tblPatientStatuses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -198,6 +252,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804191202212_tblVisit insert.resx">
       <DependentUpon>201804191202212_tblVisit insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804191504398_update PatientStatuses.resx">
+      <DependentUpon>201804191504398_update PatientStatuses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804191506165_update PatientStatuses2.resx">
+      <DependentUpon>201804191506165_update PatientStatuses2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804191509430_delete tblPatientStatuses.resx">
+      <DependentUpon>201804191509430_delete tblPatientStatuses.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

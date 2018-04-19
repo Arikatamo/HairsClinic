@@ -13,8 +13,7 @@ namespace HairsClientLib
         public EFContext() : base("ConnectionLocal") { }
         public DbSet<ContactS> Contacts { get; set; }
         public DbSet<GenderS> Genders { get; set; }
-        public DbSet<StatusesForPatient> Statuses { get; set; }
-        public DbSet<PatientStatuS> PatientStatuss { get; set; }
+        public DbSet<StatusesForPatient> StatusesPatient { get; set; }
         public DbSet<CommentaryToVisit> CommentToVisits { get; set; }
         public DbSet<CommentaryType> CommentTypes { get; set; }
         public DbSet<ResearchStatus> ResearStatus { get; set; }

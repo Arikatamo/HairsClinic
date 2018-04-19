@@ -15,12 +15,12 @@ namespace HairsClientLib.Concrete
         {
             context = _context;
         }
-        public AccesRight AddVitamins(AccesRight vitamin)
+        public AccesRight Add(AccesRight vitamin)
         {
             return context.Access.Add(vitamin);
         }
 
-        public IList<AccesRight> GetAllVit()
+        public IList<AccesRight> GetAll()
         {
             return context.Access.ToList();
         }

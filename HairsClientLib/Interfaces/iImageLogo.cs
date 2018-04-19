@@ -7,14 +7,11 @@ using System.Threading.Tasks;
 
 namespace HairsClientLib.Interfaces
 {
-    /// <summary>
-    /// Права доступа
-    /// </summary>
-    public interface iAccesRight
+    public interface iImageLogo
     {
-        AccesRight Add(AccesRight item);
-        IList<AccesRight> GetAll();
-        void Remove(AccesRight item);
+        ImageLogo Add(ImageLogo item);
+        IList<ImageLogo> GetAll();
+        void Remove(ImageLogo item);
         void SaveChanges();
         void Dispose();
     }

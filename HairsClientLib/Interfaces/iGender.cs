@@ -7,14 +7,11 @@ using System.Threading.Tasks;
 
 namespace HairsClientLib.Interfaces
 {
-    /// <summary>
-    /// Права доступа
-    /// </summary>
-    public interface iAccesRight
+    public interface iGender
     {
-        AccesRight Add(AccesRight item);
-        IList<AccesRight> GetAll();
-        void Remove(AccesRight item);
+        GenderS Add(GenderS item);
+        IList<GenderS> GetAll();
+        void Remove(GenderS item);
         void SaveChanges();
         void Dispose();
     }

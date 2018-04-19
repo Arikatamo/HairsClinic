@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 namespace HairsClientLib.Interfaces
 {
     /// <summary>
-    /// Права доступа
+    /// Контакты
     /// </summary>
-    public interface iAccesRight
+    public interface iContacts
     {
-        AccesRight Add(AccesRight item);
-        IList<AccesRight> GetAll();
-        void Remove(AccesRight item);
+        ContactS Add(ContactS item);
+        IList<ContactS> GetAll();
+        void Remove(ContactS item);
         void SaveChanges();
         void Dispose();
     }

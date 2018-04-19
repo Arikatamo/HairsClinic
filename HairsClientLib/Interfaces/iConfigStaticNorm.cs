@@ -7,14 +7,11 @@ using System.Threading.Tasks;
 
 namespace HairsClientLib.Interfaces
 {
-    /// <summary>
-    /// Права доступа
-    /// </summary>
-    public interface iAccesRight
+   public interface iConfigStaticNorm
     {
-        AccesRight Add(AccesRight item);
-        IList<AccesRight> GetAll();
-        void Remove(AccesRight item);
+        ConfigStaticNormales Add(ConfigStaticNormales item);
+        IList<ConfigStaticNormales> GetAll();
+        void Remove(ConfigStaticNormales item);
         void SaveChanges();
         void Dispose();
     }
