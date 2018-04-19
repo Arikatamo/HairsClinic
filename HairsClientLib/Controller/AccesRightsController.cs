@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace HairsClientLib.Concrete
 {
-    public class AccesRights : iAccesRight
+    public class AccesRightsController : iAccesRight
     {
         EFContext context;
-        public AccesRights(EFContext _context)
+        public AccesRightsController(EFContext _context)
         {
             context = _context;
         }
@@ -19,7 +19,6 @@ namespace HairsClientLib.Concrete
         {
             return context.Access.Add(vitamin);
         }
-
 
         public IList<AccesRight> GetAllVit()
         {

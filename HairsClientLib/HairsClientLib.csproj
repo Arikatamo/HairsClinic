@@ -48,9 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AsyncConnection.cs" />
-    <Compile Include="Concrete\AccesRights.cs" />
+    <Compile Include="Controller\AccesRightsController.cs" />
     <Compile Include="EFContext.cs" />
     <Compile Include="Interfaces\iAccesRight.cs" />
+    <Compile Include="Interfaces\iPatientStatus.cs" />
     <Compile Include="Lib\AccesRight.cs" />
     <Compile Include="Lib\CommentaryToVisit.cs" />
     <Compile Include="Lib\CommentaryType.cs" />

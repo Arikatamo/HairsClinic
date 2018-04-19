@@ -9,9 +9,9 @@ namespace HairsClientLib.Interfaces
 {
     public interface iAccesRight
     {
-        AccesRight AddVitamins(AccesRight vitamin);
-        IList<AccesRight> GetAllVit();
-        int Remove(AccesRight Vitamin);
+        AccesRight Add(AccesRight item);
+        IList<AccesRight> GetAll();
+        void Remove(AccesRight item);
         void SaveChanges();
         void Dispose();
     }
