@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HairsClientLib
 {
-    class AsyncConnection
+    public class AsyncConnection
     {
         public delegate void ConectionDel(EFContext context);
         public event ConectionDel Conne;
