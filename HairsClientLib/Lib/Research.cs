@@ -40,7 +40,7 @@ namespace HairsClientLib.Lib
         public string Treatment { get; set; }
         [ForeignKey("Config")]
         public int ConfigId { get; set; }
-        public ConfigHair Config { get; set; }
+        public Diagnoses Config { get; set; }
         [ForeignKey("Lens")]
         public int ObjectiveId { get; set; }
         public Objectives Lens { get; set; }

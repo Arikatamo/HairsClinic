@@ -16,7 +16,7 @@ namespace HairsClientLib.Controller
             context = eFContext;
         }
 
-        public ConfigHair Add(ConfigHair item)
+        public Diagnoses Add(Diagnoses item)
         {
             return context.ConfigHairs.Add(item);
         }
@@ -26,12 +26,12 @@ namespace HairsClientLib.Controller
             context.Dispose();
         }
 
-        public IList<ConfigHair> GetAll()
+        public IList<Diagnoses> GetAll()
         {
             return context.ConfigHairs.ToList();
         }
 
-        public void Remove(ConfigHair item)
+        public void Remove(Diagnoses item)
         {
             context.ConfigHairs.Remove(item);
         }

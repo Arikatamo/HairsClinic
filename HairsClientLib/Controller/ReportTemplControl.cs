@@ -28,7 +28,7 @@ namespace HairsClientLib.Controller
 
         public IList<ReportTemplate> GetAll()
         {
-            return context.ReportTemplates.Add();
+            return context.ReportTemplates.ToList();
         }
 
         public void Remove(ReportTemplate item)

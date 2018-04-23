@@ -16,9 +16,6 @@ namespace HairsClientLib.Lib
         [ForeignKey("Contact")]
         public int ContactId { get; set; }
         public ContactS Contact { get; set; }
-        //[ForeignKey("Status")]
-        //public int StatusId { get; set; }
-        //public StatusesForPatient Status { get; set; }
         [Required]
         public DateTime DateCreate { get; set; }
         [Required,StringLength(maximumLength:2000)]

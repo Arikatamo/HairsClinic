@@ -8,7 +8,7 @@ using HairsClientLib.Lib;
 
 namespace HairsClientLib.Controller
 {
-    class ReportFieldControl: iReportField
+    public class ReportFieldControl: iReportField
     {
         EFContext context;
         public ReportFieldControl(EFContext eFContext)

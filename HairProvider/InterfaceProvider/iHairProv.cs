@@ -4,17 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HairProvider.InterfaceProvider;
-using HairsClientLib.Controller;
 using HairsClientLib.Lib;
+using static HairProvider.Provider.HairProv;
 
 namespace HairProvider.InterfaceProvider
 {
     public interface iHairProv
     {
-        Hair Add(int height, int x1,int y1,int x2,int y2);
+        Hair Add(Hair hair);
         void Remove(Hair item);
         Hair Get(int id);
         IList<Hair> GetAll();
+        event Connected Connect;
         void Dispose();
     }
 }

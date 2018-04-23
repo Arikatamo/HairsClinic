@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace HairsClientLib.Lib
 {
     [Table("tblConfigHair")]
-    public class ConfigHair
+    public class Diagnoses
     {
         [Key]
         public int Id { get; set; }

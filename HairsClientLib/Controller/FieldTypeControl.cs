@@ -8,7 +8,7 @@ using HairsClientLib.Lib;
 
 namespace HairsClientLib.Controller
 {
-    class FieldTypeControl : iFieldType
+    public class FieldTypeControl : iFieldType
     {
         EFContext context;
         public FieldTypeControl(EFContext eFContext)

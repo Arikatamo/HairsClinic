@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HairsClientLib.Interfaces
+namespace HairProvider.InterfaceProvider
 {
-   public interface iConfigs
+  public  interface iDiagnosProv
     {
-        Diagnoses Add(Diagnoses item);
-        IList<Diagnoses> GetAll();
+        Diagnoses Add(Diagnoses hair);
         void Remove(Diagnoses item);
-        void SaveChanges();
+        Diagnoses Get(int id);
+        IList<Diagnoses> GetAll();
         void Dispose();
     }
 }

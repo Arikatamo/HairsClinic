@@ -8,7 +8,7 @@ using HairsClientLib.Lib;
 
 namespace HairsClientLib.Controller
 {
-    class ConfigStaticNormControl: iConfigStaticNorm
+    public class ConfigStaticNormControl: iConfigStaticNorm
     {
         EFContext context;
         public ConfigStaticNormControl(EFContext eFContext)

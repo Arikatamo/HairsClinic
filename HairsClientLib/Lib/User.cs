@@ -25,11 +25,11 @@ namespace HairsClientLib.Lib
         public IList<Research> ResearchsUser { get; set; }
         [ForeignKey("Config")]
         public int ConfigsId { get; set; }
-        public ConfigHair Config { get; set; }
+        public Diagnoses Config { get; set; }
         [ForeignKey("Contact")]
         public int ContactId { get; set; }
         public ContactS Contact { get; set; }
-        [ForeignKey("")]
+        [ForeignKey("Access")]
         public int AccesRightId { get; set; }
         public AccesRight Access { get; set; }
         [ForeignKey("Repors")]

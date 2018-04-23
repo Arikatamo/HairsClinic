@@ -21,7 +21,7 @@ namespace HairsClientLib
         public DbSet<Objectives> Objectivs { get; set; }
         public DbSet<ConfigHairSize> ConfHairSizes { get; set; }
         public DbSet<ConfigStaticNormales> ConfigStaticNormales { get; set; }
-        public DbSet<ConfigHair> ConfigHairs { get; set; }
+        public DbSet<Diagnoses> ConfigHairs { get; set; }
         public DbSet<Photoses> Photos { get; set; }
         public DbSet<Hair> Hairs { get; set; }
         public DbSet<FieldVariants> FieldVariant { get; set; }

@@ -11,12 +11,12 @@ using HairsClientLib.Controller;
 
 namespace HairProvider.Provider
 {
-    class HairProv : iHairProv
+    public class HairProv : iHairProv
     {
         private iHair control;
         private AsyncConnection conntect;
-        public delegate void HairsD();
-        public event HairsD CheckConnect;
+        public delegate void Connected();
+        public event Connected Connect;
         public HairProv()
         {
             conntect.Connect();
@@ -26,19 +26,20 @@ namespace HairProvider.Provider
         private void Conntect_Conne(EFContext context)
         {
             control = new HairControl(context);
-            CheckConnect?.Invoke();
+            Connect?.Invoke();
         }
 
-        public Hair Add(int Width, int x1, int y1, int x2, int y2)
+        public Hair Add(Hair hairIn)
         {
             Hair hair = new Hair
             {
-                Width = Width,
-                x1 = x1,
-                x2 = x2,
-                y2 = y2,
-                y1 = y1
+                Width = hairIn.Width,
+                x1 = hairIn.x1,
+                x2 = hairIn.x2,
+                y2 = hairIn.y2,
+                y1 = hairIn.y1
             };
+            control.Add(hair);
             control.SaveChanges();
            
             return hair;
