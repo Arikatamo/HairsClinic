@@ -11,6 +11,7 @@ namespace HairsClientLib.Lib
     [Table("tblResearch")]
    public class Research
     {
+
         [Key]
         public int  Id { get; set; }
         [ForeignKey("ResearchType")]
